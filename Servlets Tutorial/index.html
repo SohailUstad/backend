@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-light P-5">
+    <h1 class="p-2" style="font-size: 50px;">Servlets and JSP</h1>
+    <div class="text-left p-3">
+      Learn to develop backend using java. This step by step tutorial covers
+      all
+      the basics of how backend softwares work and
+      teaches how to develop them. We are going to use servlets as our
+      backend.
+      It is a very simple and easy to learn technology.
+      Even though the current market doesn't use servlets it will be very
+      helpful to uderstand the overall flow of latest backend technologies
+      like
+      Spring boot , Spring MVC etc.
+    </div>
+  </div>
+
+  <div class="container-fluid bg-dark text-white p-2 text-center">
+    <span style="font-size: 20px;font-family:serif;">Aim: To develop a login
+      and registration system using Java</span>
+  </div>
+
+  <div class="container-fluid p-1 bg-light">
+    <div class="row m-2">
+      <div id="listOfRequiredSoftwares" class="container-fluid p-2 bg-primary
+          rounded font-weight-bold text-white">
+        <img src="Images/downarrow.png" style="height: 20px;"> 1. List Of
+        Required Softwares
+      </div>
+      <div class="container-fluid" id="listOfRequiredSoftwaresdiv">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">JDK (Java Development Kit) <span class="text-warning">Note: Latest edition is
+              preferred</span></li>
+          <li class="list-group-item">Eclipse (2021-9 R)</li>
+          <li class="list-group-item">Tomcat Server</li>
+          <li class="list-group-item">MySQL for database</li>
+          <li class="list-group-item">SQL Yog GUI Client Community edition</li>
+        </ul>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $("#listOfRequiredSoftwares").click(function () {
+            $("#listOfRequiredSoftwaresdiv").toggle(1000);
+          });
+        });
+
+      </script>
+    </div>
+    <div class="row m-2">
+      <div id="StepstoInstalltheSoftwaresMentionedAbove" class="container-fluid p-2 bg-primary rounded font-weight-bold
+          text-white">
+        <img src="Images/downarrow.png" style="height: 20px;"> 2. Installing the Softwares Mentioned Above
+      </div>
+      <div class="container-fluid p-3" id="StepstoInstalltheSoftwaresMentionedAbovediv">
+        <div id="jdkinstallation" class="container-fluid p-2 bg-primary
+          rounded font-weight-bold text-white">
+          <img src="Images/downarrow.png" style="height: 20px;"> Installing JDK
+        </div>
+        <div class="container-fluid" id="jdkinstallationdiv">
+          <h5>Step 1: Download the latest version of java from below link</h5>
+          <a href="https://download.oracle.com/java/19/latest/jdk-19_windows-x64_bin.exe">Java SE Development Kit
+            19.0.2</a>
+          <h5 class="mt-2">Step 2: Right click on the downloaded file and click on open</h5>
+          <img src="Images/jdkfiledownloaded.png" class="img-fluid">
+          <h5 class="mt-2">Step 3: If it asked for permission click on yes</h5>
+          <h5 class="mt-2">Step 4: Click next</h5>
+          <img src="Images/jdkinstallation-step1.png" class="img-fluid">
+          <h5 class="mt-2">Step 5: Again click on next</h5>
+          <img src="Images/jdkinstallation-step2.png" class="img-fluid">
+          <div>It will now start the installation</div>
+          <h5 class="mt-2">Step 6: After installation is finished just click on close</h5>
+          <img src="Images/jdkinstallation-step3.png" class="img-fluid">
+          <h5 class="mt-2">Step 7: Navigate to bin directory of java and copy the path.</h5>
+          <div>Open your file explorer <br>
+            Go to this pc <br>
+            C drive <br>
+            Program files <br>
+            jdk-19 <br>
+            bin <br>
+            And copy the path by clicking on it
+          </div>
+          <img src="Images/jdkinstallation-step5.png" class="img-fluid">
+          <h5 class="mt-2">Step 8: Search for edit environment variables in windows search bar and open it</h5>
+          <img src="Images/jdkinstallation-step4.png" class="img-fluid">
+          <div>It will open this window</div>
+          <img src="Images/jdkinstallation-step6.png" class="img-fluid">
+          <h5 class="mt-2">Step 9: Click on new and the paste the bin directory path you have copied just now and then
+            click on ok</h5>
+          <img src="Images/jdkinstallation-step9.png" class="img-fluid">
+        </div>
+        <script>
+          $(document).ready(function () {
+            $("#jdkinstallation").click(function () {
+              $("#jdkinstallationdiv").toggle(1000);
+            });
+          });
+
+        </script>
+        <div id="settingUpEclipse" class="container-fluid p-2 bg-primary
+        rounded font-weight-bold text-white mt-2">
+          <img src="Images/downarrow.png" style="height: 20px;"> Setting Up Eclipse
+        </div>
+        <div class="container-fluid" id="settingUpEclipsediv">
+          <h5 class="mt-2">Step 1: Download eclipse using below link</h5>
+          <a
+            href="https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2021-09/R/eclipse-jee-2021-09-R-win32-x86_64.zip">Eclipse
+            IDE for Enterprise Java and Web Developers</a>
+          <h5 class="mt-2">Step 2: Extract the zip file using winrar. Do not use your window's default extractor</h5>
+          <h5 class="mt-2">Step 3: Now navigate to the folder you extracted just now. Inside you will find one more
+            folder named eclipse. Open it. Inside there
+            is a application file named eclipse. It is the file you need to run to launch the IDE
+          </h5>
+          <img src="Images/eclipseInstallation-step1.png" class="img-fluid">
+        </div>
+        <script>
+          $(document).ready(function () {
+            $("#settingUpEclipse").click(function () {
+              $("#settingUpEclipsediv").toggle(1000);
+            });
+          });
+
+        </script>
+        <div id="tomcatConfigure" class="container-fluid p-2 bg-primary
+        rounded font-weight-bold text-white mt-2">
+          <img src="Images/downarrow.png" style="height: 20px;"> Configuring Tomcat Server in eclipse
+        </div>
+        <div class="container-fluid" id="tomcatConfigurediv">
+          <h5 class="mt-5">Step 1: In the last step you have launched the eclipse and this is the welcome window</h5>
+          <img src="Images/tomcatinstallation-step1.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 2: First Close the welcome window by clcking in this cross</h5>
+          <img src="Images/tomcatinstallation-step3.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 3: Click on Window -> Show view -> Servers</h5>
+          <img src="Images/tomcatinstallation-step2.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 4: Click on this link to add a new server</h5>
+          <img src="Images/tomcatinstallation-step4.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 5: Click on this button to expan the Apache directory</h5>
+          <img src="Images/tomcatinstallation-step5.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 6: Scroll down little bit -> Select tomcat 9 -> Click on next</h5>
+          <img src="Images/tomcatinstallation-step6.png" alt="" class="img-fluid">
+          <h5 class="mt-5">Step 7: Click on Download and install button</h5>
+          <img src="Images/tomcatinstallation-step88.png" alt="" class="img-fluid">
+          <div>Accept the agreement -> select the default folder whichever it opens and It will start downloading
+            tomcat.
+            You can see progress at the bottom right of the window
+            Wait till it downloads the server
+          </div>
+          <img src="Images/tomcatinstallation-step7.png" class="img-fluid" alt="">
+          <h5 class="mt-5">Step 8: Click on finish button</h5>
+          <img src="Images/tomcatinstallation-step8.png" class="img-fluid">
+          <div>Congretulations!!! You can see that the server is configured successfully</div>
+          <img src="Images/tomcatinstallation-step9.png" class="img-fluid" alt="">
+        </div>
+
+        <script>
+          $(document).ready(function () {
+            $("#tomcatConfigure").click(function () {
+              $("#tomcatConfigurediv").toggle(1000);
+            });
+          });
+
+        </script>
+        <div id="mysqlinstallation" class="container-fluid p-2 bg-primary
+        rounded font-weight-bold text-white mt-2">
+          <img src="Images/downarrow.png" style="height: 20px;"> Installing MySQL Database
+        </div>
+        <div class="container-fluid" id="mysqlinstallationdiv">
+
+        </div>
+        <script>
+          $(document).ready(function () {
+            $("#mysqlinstallation").click(function () {
+              $("#mysqlinstallationdiv").toggle(1000);
+            });
+          });
+
+        </script>
+        <div id="mysqlinstallation" class="container-fluid p-2 bg-primary
+        rounded font-weight-bold text-white mt-2">
+          <img src="Images/downarrow.png" style="height: 20px;"> Installing SQL Yog
+        </div>
+        <div class="container-fluid" id="mysqlinstallationdiv">
+
+        </div>
+        <script>
+          $(document).ready(function () {
+            $("#mysqlinstallation").click(function () {
+              $("#mysqlinstallationdiv").toggle(1000);
+            });
+          });
+
+        </script>
+      </div>
+      <script>
+        $(document).ready(function () {
+          $("#StepstoInstalltheSoftwaresMentionedAbove").click(function () {
+            $("#StepstoInstalltheSoftwaresMentionedAbovediv").toggle(1000);
+          });
+        });
+      </script>
+
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
